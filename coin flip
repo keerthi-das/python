@@ -1,0 +1,15 @@
+import random
+
+def coin_flip_streaks():
+    streak = 0
+    max_streak = 0
+    for _ in range(1000):
+        flip = random.choice(['H', 'T'])
+        if flip == 'H':
+            streak += 1
+            max_streak = max(max_streak, streak)
+        else:
+            streak = 0
+    print(f"Longest streak of heads: {max_streak}")
+
+coin_flip_streaks()
