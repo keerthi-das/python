@@ -1,0 +1,4 @@
+def comma_code(lst):
+    return ', '.join(map(str, lst[:-1])) + ' and ' + str(lst[-1])
+
+print(comma_code(['apples', 'bananas', 'tofu', 'cats']))
