@@ -1,0 +1,10 @@
+import random
+
+def zombie_dice_bots():
+    def bot_decision():
+        return random.choice(['Run', 'Take Risk'])
+
+    for _ in range(5):
+        print(f"Bot decision: {bot_decision()}")
+
+zombie_dice_bots()
