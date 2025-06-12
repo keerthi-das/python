@@ -1,0 +1,6 @@
+def fantasy_game_inventory():
+    inventory = {'sword': 1, 'shield': 1, 'potion': 5}
+    for item, quantity in inventory.items():
+        print(f"{item}: {quantity}")
+
+fantasy_game_inventory()
